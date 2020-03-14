@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>spread sheet</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="tool">
+    <button id="btn-add-row">Add Row</button>
+    <button id="btn-add-col">Add Column</button>
+    <button id="btn-del-row">Delete Row</button>
+    <button id="btn-del-col">Delete Column</button>
+    <button id="btn-load">Load</button>
+    <button id="btn-import">Import</button>
+    <button id="btn-export">Export</button>
+    <input id="input-upload" type="file">
+  </div>
+  <div class="sheet-container card">
+    <div id="selection"></div>
+    <table id="sheet">
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.12/Rx.min.js"></script>
+  <script src="./spreadsheet.js"></script>
+</body>
+</html>

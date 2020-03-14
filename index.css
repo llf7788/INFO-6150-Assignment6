@@ -1,0 +1,97 @@
+.card {
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.tool {
+  padding: 10px 20px;
+  box-shadow: 0 0px 1px rgba(0,0,0,0.12), 0 0px 1px rgba(0,0,0,0.24);
+  /* border-bottom: 1px solid #eee; */
+}
+.tool button {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+.tool button:not([disabled]):hover {
+  background-color: #37a0f4;
+  color: white;
+}xw
+.tool button:active {
+  background-color: #3190db;
+  color: white;
+}
+.sheet-container {
+  padding: 20px;
+  margin-top: 10px;
+}
+#selection {
+  position: absolute;
+  border: 2px solid #2c5c71;
+  box-sizing: border-box;
+  pointer-events: none;
+  
+}
+.sel-blue {
+  background: rgba(0, 0, 255, .1);
+}
+.sel-gray {
+  background: rgba(0, 0, 0, .8) !important;
+  color: white !important;
+}
+table {
+  width: max-content;
+  border-collapse: collapse;
+  color: #333;
+  font-size: 14px;
+}
+td {
+  width: 120px;
+  height: 20px;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0 3px;
+}
+td[data-col="0"] {
+  width: 50px;
+}
+.sheet-header {
+  background: whitesmoke;
+  color: #999;
+  text-align: center;
+  align: center;
+  valign: center;
+  user-select: none;
+}
+.edit-input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+  line-height: 100%;
+}
+.sheet-container {
+  overflow: hidden;
+  overflow-x: scroll;
+}
+#input-upload {
+  display: none;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: rgba(50,50,50,.3);
+}
+::-webkit-scrollbar-track {
+  border-radius: 1em;
+  background-color: rgba(50,50,50,.1);
+} */
